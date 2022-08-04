@@ -7,7 +7,7 @@ import time
 pygame.init()
 win=pygame.display.set_mode((500,501))
 pygame.display.set_caption("Dodge game")
-pygame.display.set_icon(pygame.image.load("E:\\hafsi al ghabiyou\\coding\\python\\Dodge game\\V.png"))
+pygame.display.set_icon(pygame.image.load("V.png"))
 
 y=50
 x=50
@@ -19,7 +19,7 @@ n=[0,0,0,0,0,0,0,0]
 for i in range(0,6):
     n[i]=random.randrange(0,491)
 
-bbb=pygame.image.load("E:\\hafsi al ghabiyou\\coding\\python\\Dodge game\\DGB.png")
+bbb=pygame.image.load("DGB.png")
 
 Hscore=0
 score=0
@@ -128,11 +128,11 @@ while run:
 
 
 #score calculation 
-f=open("E:\\hafsi al ghabiyou\\coding\\python\\Dodge game\\scores.txt","r")
+f=open("scores.txt","r")
 ch=f.read() 
 if Hscore> int(ch): 
     f.close() 
-    f=open("E:\\hafsi al ghabiyou\\coding\\python\\Dodge game\\scores.txt","w")
+    f=open("scores.txt","w")
     f.write(str(Hscore))
 f.close()
 print(tl)
